@@ -9,14 +9,14 @@
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
   </head>
- 
+
   <body class="bg-body-secondary">
     <div class="position-relative">
-      <h1>California trip 2023</h1>
-      <img src="images/home banner.png" width="100%" class="img-fluid"/>
+      <h1>Week 10 coding assignment - DOM</h1>
+      <img src="images/home banner.jpg" width="100%" class="img-fluid" />
     </div>
 
-    <nav class="navbar navbar-expand-md bg-secondary">
+    <!-- <nav class="navbar navbar-expand-md bg-secondary"> 
       <div class="container-fluid">
         <a class="navbar-brand fs-4" href="home.html">2023 Trip</a>
         <button
@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <!--  -->
+              
               <a
                 class="nav-link active fs-4"
                 aria-current="page"
@@ -47,76 +47,62 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> 
+-->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="myTable">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="row">
-            <div class="col-md-2 border font-weight-bold">Day 1</div>
-            <div class="col-md-10 border">
-              The first day was spent driving to California from Arizona. It
-              took about 5 hours. The first thing we did was go to a shopping
-              center. The main reason for this first stop was that my girlfriend
-              wanted to visit the Hello Kitty Cafe. We did some souvenir
-              shopping and also took advantage of the shops to do Christmas
-              shopping. After all of this, we checked into the hotel and slept
-              for a couple of hours. The last hours of the day were spent
-              finding a place to eat for dinner and dessert.
+            <div class="col-md-4 border font-weight-bold">Term</div>
+            <div class="col-md-4 border">Definition</div>
+            <div class="col-md-4 border">Example</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="border col-md-4 font-weight-bold">Math.random()</div>
+            <div class="border col-md-4">
+              Gets a random number, decimals including between 0 and 1
+            </div>
+            <div class="col-md-4 border">
+              console.log(Math.random()) // Expected output: a number from 0 to
+              less than 1
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="row">
-            <div class="border col-md-2 font-weight-bold">Day 2</div>
-            <div class="border col-md-10">
-              For the second day, we slept in until around 11am. We packed our
-              bags and headed straight for Disney land. When we first got there,
-              we went looking for a place to eat breakfast. We chose to eat at
-              an Italian food. One thing we learned is that everything at Disney
-              is ridiculously expensive. Next time we want to make sure we eat
-              BEFORE getting here. The first few hours were spent at the bottom
-              park. After 12 we switched over to the top park. At around 9pm was
-              supposed to be the Christmas fireworks. They were cancelled
-              unfortunately due to "high winds". Upon hearing this, my
-              girlfriend and I, along with practically everyone else in the
-              park, decided to head out and leave since we all came to watch the
-              fireworks.
+            <div class="col-md-4 border font-weight-bold">appendChild()</div>
+            <div class="col-md-4 border">
+              Adds a node to the end of a list of children of a parent node
             </div>
+            <div class="col-md-4 border">node.appendChild(text_node);</div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="row">
-            <div class="col-md-2 border font-weight-bold">Day 3</div>
-            <div class="col-md-10 border">
-              On our final day, we checked out of the hotel and headed to a
-              restaurant to eat breakfast. After eating, we headed straight to
-              6Flags. In all honesty, I was dreading 6Flags. I have a fear of
-              heights and never did I dream of going. We made it after a couple
-              of hours driving. The entire time I was nervous, not wanting to go
-              on any rides. The first ride that my girlfriend picked out was the
-              most extreme out of all of them in my opinion. It was called the
-              X2. I chickened out and my girlfriend sat in the coaster by
-              herself. I kept looking at her and I noticed how sad she got since
-              she was doing it alone. I decided to conquer my fear and get on
-              the ride with her. Not going to lie, it was so so so scary. But I
-              was very happy that I went through with it in the end. After going
-              to the most extreme ride, I felt like I was ready to conquer the
-              rest. We stayed at the park for many many hours. I can't even
-              remember at what time we left. It was finally time to head back
-              home.
+            <div class="col-md-4 border font-weight-bold">querySelector</div>
+            <div class="col-md-4 border">
+              Gets the first element of the matched select or
             </div>
+            <div class="col-md-4 border">document.querySelector("p");</div>
           </div>
         </div>
       </div>
     </div>
+    <button onclick="addRow()">Add</button>
+    <button onclick="deleteRow()">Remove</button>
 
     <!-- <div class="alert alert-primary" role="alert">It works!</div> -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
